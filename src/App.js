@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import api from './services/api';
 
+import Sidebar from './components/Sidebar'
+
 import './App.css';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
   return (
     <>
       <h1>Dashboard</h1>
+
+      <Sidebar />
 
       <button onClick={adicionarFuncionario}>+ Adicionar funcionário</button>
 
